@@ -1,0 +1,18 @@
+echo "User Name: " $USER 
+echo "Login Name: " $LOGNAME 
+echo "Current Shell: " $SHELL 
+echo "List of Shells: " 
+chsh -l 
+echo "Home Directory: " $HOME 
+echo "Our PC OS is: "$OSTYPE 
+echo "Current Path" $PATH 
+echo "Current Directory: " 
+pwd 
+echo "List of Logged Users" 
+who|wc -l 
+echo "System Configuration (or) PC Configuration: " 
+lscpu 
+echo "Free Memory Space: " 
+free –m 
+echo “Showing all Memory Information:” 
+cat/proc/meminfo 
