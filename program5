@@ -1,0 +1,14 @@
+echo "Filter commands" 
+cp /etc/passwd passwd 
+echo "Display the lines containing the word root" 
+grep -n "root" passwd | more 
+echo "Display the count of lines that is containing the word root" 
+grep -c "root" passwd 
+echo "Display the count of lines that dont match with the line root" 
+grep -v "root" passwd | more 
+echo "Display the no. of lines, character and words in passwd file" 
+wc passwd 
+echo "Replace ":" with "*" in the passwd file" 
+tr ':' '*' < passwd | more 
+echo "Display first column of the passwd file" 
+cut -d ':' -f1 passwd
