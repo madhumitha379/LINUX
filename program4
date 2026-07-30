@@ -1,0 +1,14 @@
+echo "1.Current date:" 
+echo "2.Your user name:" 
+echo "3.List files and directories" 
+read option 
+case ${option} in 
+1) 
+echo "Current date is :" $(date);; 
+2) 
+echo "Your user name is: "$(whoami);; 
+3) 
+echo "To list out all files and directories:"$(ls);; 
+*) 
+echo "Invalid Option" 
+esac 
