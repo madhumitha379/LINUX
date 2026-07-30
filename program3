@@ -1,0 +1,14 @@
+echo "Exploring Pipes and Redirection Commands" 
+echo "Using pipe command:" 
+ls –l | wc 
+echo "Using tee command:" 
+ls –l | wc | tee new.txt 
+echo "Content in new.txt" 
+cat new.txt 
+echo "Using redirection command:" 
+echo "Content in file1.txt before redirecting:" 
+cat file1.txt 
+echo "Redirecting commands is to be executed. .. " 
+cat >> file1.txt 
+echo "The content in file1.txt after appending:" 
+cat file1.txt 
