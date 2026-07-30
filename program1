@@ -1,0 +1,26 @@
+echo “ ls command” 
+ls 
+echo "Copying content from file1.txt to file3.txt" 
+cp file1.txt file3.txt 
+echo "Displaying contents in file3.txt" 
+cat file3.txt 
+echo "Moving contents from file2.txt to file4.txt" 
+mv file2.txt file4.txt 
+echo "Displaying content in file4.txt" 
+cat file4.txt 
+echo "Display count of the lines, words, character in the file file4.txt" 
+wc file4.txt 
+echo "Display the number of lines in file4.txt" 
+wc -l file4.txt 
+echo "Display the number of words in file4.txt" 
+wc -w file4.txt 
+echo "Display the number of character in file4.txt" 
+wc -c file4.txt 
+echo "Splitting the file4.txt by 3 lines in each" 
+split -3 file4.txt 
+echo "Listing the files" 
+ls 
+echo "Comparing the files file1.txt file4.txt" 
+cmp file1.txt file4.txt 
+echo "Using diff command between file1.txt file4.txt" 
+diff file1.txt file4.txt
