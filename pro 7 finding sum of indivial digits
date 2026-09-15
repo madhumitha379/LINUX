@@ -1,0 +1,16 @@
+#!/bin/bash 
+ 
+echo -n "Enter a number: " 
+read n 
+ 
+sd=0      # Stores single digit (remainder) 
+sum=0     # Accumulates sum of digits 
+ 
+while [ $n -gt 0 ]        # Loop until all digits are processed 
+do 
+  sd=$(( $n % 10 ))       # Extract last digit 
+  n=$(( $n / 10 ))        # Remove last digit 
+  sum=$(( $sum + $sd ))   # Add digit to sum 
+done 
+ 
+echo "Sum of all digits is $sum"
