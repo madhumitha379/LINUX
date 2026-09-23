@@ -17,8 +17,6 @@ ps -eo pid,comm,%cpu --sort=-%cpu | head -6
 echo "" 
 echo "--- PID and PPID ---" 
 echo "PID    PPID   COMMAND" 
-KG College of Arts and Science (Autonomous)                                    Lab Manual – 2024 Batch Onwards 
-Linux and Shell Programming Lab 
 ps -eo pid,ppid,comm | head -15 
  
 # e. Total number of running processes 
