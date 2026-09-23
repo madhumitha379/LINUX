@@ -19,9 +19,7 @@ for (( i=0; i<$1; i++ ))           # Compare all numbers
 do 
   if [ ${nos[$i]} -lt $small ]; then 
     small=${nos[$i]}                # Update smallest 
-  elif [ ${nos[$i]} -gt $greater ]; then 
-KG College of Arts and Science (Autonomous)                                    
-Lab Manual – 2024 Batch Onwards 
+  elif [ ${nos[$i]} -gt $greater ]; then
 greater=${nos[$i]}              # Update greatest 
 fi 
 done 
