@@ -1,16 +1,14 @@
 clear 
 echo "Enter any file name:" 
-read filenm
-                        # Read file name from user 
-if [ -e $filenm ]                  # Check if file exists 
+read filenm 
+if [ -e $filenm ]                   
 then 
 echo "$filenm file exists" 
-if [ -s $filenm ]               # Check if file size > 0 
+if [ -s $filenm ]              
 then 
 echo "$filenm file has size > 0" 
 else 
-rm $filenm
-                     # Remove file if size = 0 
+rm $file
 echo "$filenm deleted (size was 0 bytes)" 
 fi 
 else 
